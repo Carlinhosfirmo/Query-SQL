@@ -12,7 +12,7 @@ FROM dbo.alunos AS A
 	 INNER JOIN dbo.turmas AS T ON A.idturma = T.id
 	 INNER JOIN dbo.educacaoetapas AS E ON T.etapa = E.id
 	 INNER  JOIN dbo.educacaotipos AS Ano ON T.tipo = Ano.id
---WHERE A.fotografia = 1
+
 
 GROUP BY E.nome, T.nome, Ano.nome, t.turno
 
@@ -24,3 +24,4 @@ ORDER BY SÉRIE,
 			END, 
 			 
 		 TURMA
+		 -- Teste 
